@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nifty-terminal
+    env: python
+    region: singapore
+    pythonVersion: "3.11.8"
+    buildCommand: |
+      pip install -r requirements.txt
+      curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+      apt-get install -y nodejs
+      cd frontend && npm install && npm run build
+    startCommand: cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.8"

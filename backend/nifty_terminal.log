@@ -1,0 +1,57 @@
+2026-02-20 06:44:33 | INFO     | data.database | Database initialised at D:\nifty_v2\backend\core\..\paper_trading.db
+2026-02-20 06:44:33 | INFO     | server | No saved session found — login required.
+2026-02-20 06:46:40 | INFO     | data.database | Database initialised at D:\nifty_v2\backend\core\..\paper_trading.db
+2026-02-20 06:46:40 | INFO     | server | No saved session found — login required.
+2026-02-20 06:57:00 | INFO     | data.database | Database initialised at D:\nifty_v2\backend\core\..\paper_trading.db
+2026-02-20 06:57:00 | INFO     | server | No saved session found — login required.
+2026-02-20 06:57:00 | INFO     | alerts.telegram_commands | Telegram command listener started (chat_id=918853932)
+2026-02-20 06:57:00 | INFO     | server | Telegram command listener started.
+2026-02-20 06:57:01 | INFO     | alerts.telegram_commands | Telegram: drained old messages, offset=634008111
+2026-02-20 06:57:48 | INFO     | alerts.telegram_commands | Telegram command listener stopped.
+2026-02-20 06:57:48 | INFO     | data.database | Database initialised at D:\nifty_v2\backend\core\..\paper_trading.db
+2026-02-20 06:57:48 | INFO     | server | No saved session found — login required.
+2026-02-20 06:57:48 | INFO     | alerts.telegram_commands | Telegram command listener started (chat_id=918853932)
+2026-02-20 06:57:48 | INFO     | server | Telegram command listener started.
+2026-02-20 07:01:32 | INFO     | alerts.telegram_commands | Telegram command listener stopped.
+2026-02-20 07:01:43 | INFO     | data.database | Database initialised at D:\nifty_v2\backend\core\..\paper_trading.db
+2026-02-20 07:01:43 | INFO     | server | No saved session found — login required.
+2026-02-20 07:01:43 | INFO     | alerts.telegram_commands | Telegram command listener started (chat_id=918853932)
+2026-02-20 07:01:43 | INFO     | server | Telegram command listener started.
+2026-02-20 07:02:26 | INFO     | alerts.telegram_commands | Telegram command received: START
+2026-02-20 07:02:29 | INFO     | utils.fyers_login | === Fyers TOTP Login ===
+2026-02-20 07:02:29 | INFO     | utils.fyers_login | send_login_otp → code=1043 msg=otp has been successfully sent
+2026-02-20 07:02:29 | INFO     | utils.fyers_login | Step 1 OK — request_key obtained
+2026-02-20 07:02:29 | INFO     | utils.fyers_login | Near TOTP boundary — waiting 4s
+2026-02-20 07:02:33 | INFO     | utils.fyers_login | TOTP code: 263633
+2026-02-20 07:02:33 | INFO     | utils.fyers_login | verify_otp (TOTP) → code=2 msg=fy_id and OTP verified successfully
+2026-02-20 07:02:33 | INFO     | utils.fyers_login | Step 2 OK — TOTP verified
+2026-02-20 07:02:34 | INFO     | utils.fyers_login | verify_pin → code=1004 msg=pin is Verified
+2026-02-20 07:02:34 | INFO     | utils.fyers_login | Step 3 OK — PIN verified, trade token obtained
+2026-02-20 07:02:34 | INFO     | utils.fyers_login | token → s=ok keys=['appName', 'app_id', 'auth', 'image', 'nonce', 'permissions', 'redirectUrl', 'response_type', 'scope', 'state', 'user_id']
+2026-02-20 07:02:34 | INFO     | utils.fyers_login | Final access token obtained from data.auth ✅
+2026-02-20 07:02:34 | INFO     | utils.fyers_login | === Login SUCCESS ===
+2026-02-20 07:02:34 | ERROR    | server | Strategy init error: cannot import name 'NIFTY_INDEX_SYMBOL' from 'core.config' (D:\nifty_v2\backend\core\config.py)
+Traceback (most recent call last):
+  File "D:\nifty_v2\backend\server.py", line 107, in _init_strategy
+    from data.fyers_client import FyersClient
+  File "D:\nifty_v2\backend\data\fyers_client.py", line 14, in <module>
+    from core.config import (
+        PAPER_MODE, NIFTY_INDEX_SYMBOL, NIFTY_OPT_PREFIX, FYERS_BASE_URL, IST
+    )
+ImportError: cannot import name 'NIFTY_INDEX_SYMBOL' from 'core.config' (D:\nifty_v2\backend\core\config.py)
+2026-02-20 07:43:53 | INFO     | alerts.telegram_commands | Telegram command listener stopped.
+2026-02-20 07:43:54 | INFO     | data.database | Database initialised at D:\nifty_v2\backend\core\..\paper_trading.db
+2026-02-20 07:43:54 | ERROR    | server | Strategy init error: cannot import name 'NIFTY_INDEX_SYMBOL' from 'core.config' (D:\nifty_v2\backend\core\config.py)
+Traceback (most recent call last):
+  File "D:\nifty_v2\backend\server.py", line 107, in _init_strategy
+    from data.fyers_client import FyersClient
+  File "D:\nifty_v2\backend\data\fyers_client.py", line 14, in <module>
+    from core.config import (
+        PAPER_MODE, NIFTY_INDEX_SYMBOL, NIFTY_OPT_PREFIX, FYERS_BASE_URL, IST
+    )
+ImportError: cannot import name 'NIFTY_INDEX_SYMBOL' from 'core.config' (D:\nifty_v2\backend\core\config.py)
+2026-02-20 07:43:54 | INFO     | server | Session restored from database.
+2026-02-20 07:43:54 | INFO     | alerts.telegram_commands | Telegram command listener started (chat_id=918853932)
+2026-02-20 07:43:54 | INFO     | server | Telegram command listener started.
+2026-02-20 07:43:55 | INFO     | alerts.telegram_commands | Telegram: drained old messages, offset=636107005
+2026-02-20 07:46:57 | INFO     | alerts.telegram_commands | Telegram command listener stopped.
